@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mayuraa Dance Club</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+  @font-face {
+    font-family: 'Samarkan';
+    src: url('SAMAN___.TTF') format('truetype');
+  }
+</style>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -130,7 +136,7 @@
     }
 
     .hero-title {
-      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Samarkan', sans-serif;
       font-size: clamp(5rem, 14vw, 11rem);
       letter-spacing: 0.06em;
       line-height: 0.9;
