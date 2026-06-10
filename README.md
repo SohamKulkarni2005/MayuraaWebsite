@@ -10,14 +10,14 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --red:    #E8192C;
-      --gold:   #F5A623;
-      --black:  #0D0D0D;
-      --offblack: #161616;
-      --grey:   #2A2A2A;
-      --light:  #F0EDE8;
-      --white:  #FFFFFF;
-    }
+  --red:    #00A86B;
+  --gold:   #D4AF37;
+  --black:  #0A0A0A;
+  --offblack: #111411;
+  --grey:   #1E2A1E;
+  --light:  #E8F0E8;
+  --white:  #FFFFFF;
+}
 
     html { scroll-behavior: smooth; }
 
