@@ -137,7 +137,7 @@
 
     .hero-title {
       font-family: 'Samarkan', sans-serif;
-      font-size: clamp(5rem, 14vw, 11rem);
+      font-size: clamp(7rem, 20vw, 14rem);
       letter-spacing: 0.06em;
       line-height: 0.9;
       position: relative;
@@ -483,10 +483,10 @@
     <h1 class="hero-title">
       <span class="filled">MAY</span><span class="stroke">URAA</span>
     </h1>
-    <p class="hero-sub">Dance Club &nbsp;·&nbsp; Where Movement Speaks</p>
+    <p class="hero-sub">IISERB Dance Club &nbsp;·&nbsp; Where The Flow Never Stops</p>
 
     <p class="hero-intro">
-      Welcome to Mayuraa's official website! Explore everything Mayuraa does and has done in the past and dive deep into the world of dance, groove and flow.
+      Welcome to Mayuraa's official website! Explore Mayuraa and dive deep into the world of rhythm and movement.
     </p>
 
     <div class="hero-cta">
@@ -498,7 +498,7 @@
   <!-- PEOPLE -->
   <section id="people">
     <div class="reveal">
-      <p class="section-label">The Squad</p>
+      <p class="section-label">The Team</p>
       <h2 class="section-title">Our <span>People</span></h2>
       <div class="divider"></div>
     </div>
