@@ -472,7 +472,7 @@
   <section id="hero">
     <div class="hero-bg"></div>
 
-    <img src="logo.jpg" alt="Mayuraa Logo" style="width:110px; height:110px; border-radius:50%; object-fit:cover; margin-bottom:28px; position:relative; z-index:1;">
+    <img src="logo.jpg" alt="Mayuraa Logo" style="width:200px; height:200px; border-radius:150%; object-fit:cover; margin-bottom:28px; position:relative; z-index:1;">
 
     <h1 class="hero-title">
       <span class="filled">MAY</span><span class="stroke">URAA</span>
