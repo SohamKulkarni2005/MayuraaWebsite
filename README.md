@@ -480,7 +480,7 @@
     <p class="hero-sub">Dance Club &nbsp;·&nbsp; Where Movement Speaks</p>
 
     <p class="hero-intro">
-      Hey, this is a trial run — the official intro to Mayuraa will go right here. Tell the world who you are, what you stand for, and what makes your club electric.
+      Welcome to Mayuraa's official website! Explore everything Mayuraa does and has done in the past and dive deep into the world of dance, groove and flow.
     </p>
 
     <div class="hero-cta">
