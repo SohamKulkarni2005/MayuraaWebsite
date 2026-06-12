@@ -782,9 +782,7 @@
     </div>
   </section>
 
- <!-- ══════════════════════════════════════════
-       WORKSHOPS
-  ══════════════════════════════════════════ -->
+ 
  <!-- ══════════════════════════════════════════
        WORKSHOPS
   ══════════════════════════════════════════ -->
@@ -873,7 +871,7 @@
     </div>
   </section>
 
- <!-- ══════════════════════════════════════════
+<!-- ══════════════════════════════════════════
        EVENTS
   ══════════════════════════════════════════ -->
   <section id="events" class="media-section">
@@ -884,83 +882,91 @@
     </div>
 
     <div class="year-tabs reveal">
-      <button class="year-btn active" onclick="showYear('events', '2025', this)">2025</button>
-      <button class="year-btn" onclick="showYear('events', '2024', this)">2024</button>
-      <button class="year-btn" onclick="showYear('events', '2023', this)">2023</button>
+      <button class="year-btn active" onclick="showYear('events', 'ev2526', this)">2025–26</button>
+      <button class="year-btn" onclick="showYear('events', 'ev2425', this)">2024–25</button>
+      <button class="year-btn" onclick="showYear('events', 'ev2324', this)">2023–24</button>
     </div>
 
-    <div id="events-2025" class="reveal">
+    <!-- 2025-26 -->
+    <div id="events-ev2526" class="reveal">
       <div class="media-subsection">
-        <p class="media-subsection-title">Dance Battle</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Dance Battle</h4><p>2025</p></div></div>
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Dance Battle</h4><p>2025</p></div></div>
+        <p class="media-subsection-title">Independence Day <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Independence Day</h4><p>2025–26</p></div></div>
         </div>
       </div>
       <div class="media-subsection">
-        <p class="media-subsection-title">Independence Day</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Independence Day</h4><p>August 2025</p></div></div>
+        <p class="media-subsection-title">Republic Day <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Republic Day</h4><p>2025–26</p></div></div>
         </div>
       </div>
       <div class="media-subsection">
-        <p class="media-subsection-title">Republic Day</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Republic Day</h4><p>January 2025</p></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div id="events-2024" style="display:none" class="reveal">
-      <div class="media-subsection">
-        <p class="media-subsection-title">Dance Battle</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Dance Battle</h4><p>2024</p></div></div>
-        </div>
-      </div>
-      <div class="media-subsection">
-        <p class="media-subsection-title">Independence Day</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Independence Day</h4><p>August 2024</p></div></div>
-        </div>
-      </div>
-       <div class="media-subsection">
-        <p class="media-subsection-title">Republic Day</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Independence Day</h4><p>August 2024</p></div></div>
-        </div>
-      </div>
-      <div class="media-subsection">
-        <p class="media-subsection-title">Lumos</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Republic Day</h4><p>January 2024</p></div></div>
+        <p class="media-subsection-title">Dance Battle <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Dance Battle</h4><p>2025–26</p></div></div>
         </div>
       </div>
     </div>
 
-    <div id="events-2023" style="display:none" class="reveal">
+    <!-- 2024-25 -->
+    <div id="events-ev2425" style="display:none" class="reveal">
       <div class="media-subsection">
-        <p class="media-subsection-title">Dance Battle</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Dance Battle</h4><p>2023</p></div></div>
+        <p class="media-subsection-title">Independence Day <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Independence Day</h4><p>2024–25</p></div></div>
         </div>
       </div>
       <div class="media-subsection">
-        <p class="media-subsection-title">Independence Day</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Independence Day</h4><p>August 2023</p></div></div>
-        </div>
-      </div>
-       <div class="media-subsection">
-        <p class="media-subsection-title">Republic Day</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Independence Day</h4><p>August 2023</p></div></div>
+        <p class="media-subsection-title">Republic Day <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Republic Day</h4><p>2024–25</p></div></div>
         </div>
       </div>
       <div class="media-subsection">
-        <p class="media-subsection-title">Lumos</p>
-        <div class="media-grid">
-          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Republic Day</h4><p>January 2023</p></div></div>
+        <p class="media-subsection-title">Mahua — Flashmob <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Mahua — Flashmob</h4><p>2024–25</p></div></div>
+        </div>
+      </div>
+      <div class="media-subsection">
+        <p class="media-subsection-title">Dance Battle <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Dance Battle</h4><p>2024–25</p></div></div>
+        </div>
+      </div>
+      <div class="media-subsection">
+        <p class="media-subsection-title">Lumos <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Lumos</h4><p>2024–25</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2023-24 -->
+    <div id="events-ev2324" style="display:none" class="reveal">
+      <div class="media-subsection">
+        <p class="media-subsection-title">Independence Day <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Independence Day</h4><p>2023–24</p></div></div>
+        </div>
+      </div>
+      <div class="media-subsection">
+        <p class="media-subsection-title">Republic Day <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Republic Day</h4><p>2023–24</p></div></div>
+        </div>
+      </div>
+      <div class="media-subsection">
+        <p class="media-subsection-title">Dance Battle <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Dance Battle</h4><p>2023–24</p></div></div>
+        </div>
+      </div>
+      <div class="media-subsection">
+        <p class="media-subsection-title">Lumos <button class="toggle-photos-btn" onclick="togglePhotos(this)">Show Photos</button></p>
+        <div class="media-grid collapsible-photos" style="display:none">
+          <div class="media-card"><div class="media-thumb">Photo</div><div class="media-info"><h4>Lumos</h4><p>2023–24</p></div></div>
         </div>
       </div>
     </div>
@@ -1169,7 +1175,7 @@
 
     // Year tabs
    function showYear(section, year, btn) {
-  ['2025','2024','2023','2526','2425','2324'].forEach(y => {
+ ['2025','2024','2023','2526','2425','2324','ev2526','ev2425','ev2324'].forEach(y => {
     const el = document.getElementById(section + '-' + y);
     if (el) el.style.display = 'none';
   });
