@@ -25,6 +25,54 @@
       --white:    #FFFFFF;
     }
 
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .achievement-card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      border-radius: 4px;
+      border-left: 4px solid;
+      background: var(--grey);
+    }
+
+    .achievement-card.gold { border-color: #FFD700; }
+    .achievement-card.silver { border-color: #C0C0C0; }
+    .achievement-card.bronze { border-color: #CD7F32; }
+
+    .achievement-position {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      line-height: 1;
+      min-width: 52px;
+      text-align: center;
+    }
+
+    .achievement-card.gold .achievement-position { color: #FFD700; }
+    .achievement-card.silver .achievement-position { color: #C0C0C0; }
+    .achievement-card.bronze .achievement-position { color: #CD7F32; }
+
+    .achievement-details { flex: 1; }
+
+    .achievement-details h4 {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .achievement-details p {
+      font-size: 0.78rem;
+      color: rgba(232,240,232,0.55);
+    }
+
+    .achievement-medal { font-size: 1.8rem; }
+
     .announcement-card {
   border-left: 3px solid var(--green);
   padding: 20px 24px;
@@ -630,6 +678,7 @@
     <a class="nav-brand" href="#hero">MAYUR<span>AA</span></a>
     <ul class="nav-links">
       <li><a href="#announcements">Announcements</a></li>
+      <li><a href="#achievements">Achievements</a></li>
       <li><a href="#people">People</a></li>
       <li><a href="#workshops">Workshops</a></li>
       <li><a href="#events">Events</a></li>
@@ -684,6 +733,44 @@
           <a href="#" class="announcement-link">More Details</a>
         </div>
         <p class="announcement-date">May 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       ACHIEVEMENTS
+  ══════════════════════════════════════════ -->
+  <section id="achievements" style="background: var(--black);">
+    <div class="reveal">
+      <p class="section-label">Pride of Mayuraa</p>
+      <h2 class="section-title">Achieve<span>ments</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="achievements-grid reveal">
+      <div class="achievement-card gold">
+        <div class="achievement-position">1st</div>
+        <div class="achievement-details">
+          <h4>Group Dance</h4>
+          <p>IICM 2024 &nbsp;·&nbsp; IISER Bhopal</p>
+        </div>
+        <div class="achievement-medal">🥇</div>
+      </div>
+      <div class="achievement-card silver">
+        <div class="achievement-position">2nd</div>
+        <div class="achievement-details">
+          <h4>Synchro Dance</h4>
+          <p>IICM 2024 &nbsp;·&nbsp; IISER Bhopal</p>
+        </div>
+        <div class="achievement-medal">🥈</div>
+      </div>
+      <div class="achievement-card bronze">
+        <div class="achievement-position">3rd</div>
+        <div class="achievement-details">
+          <h4>Solo Dance</h4>
+          <p>IICM 2023 &nbsp;·&nbsp; IISER Bhopal</p>
+        </div>
+        <div class="achievement-medal">🥉</div>
       </div>
     </div>
   </section>
