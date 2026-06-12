@@ -14,6 +14,62 @@
     }
   </style>
   <style>
+
+    .announcement-card {
+  border-left: 3px solid var(--green);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  background: var(--grey);
+  border-radius: 0 4px 4px 0;
+}
+.announcement-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--black);
+  background: var(--gold);
+  padding: 3px 10px;
+  border-radius: 2px;
+}
+.announcement-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  color: var(--white);
+  margin: 10px 0 6px;
+  letter-spacing: 0.05em;
+}
+.announcement-body {
+  font-size: 0.9rem;
+  color: rgba(232,240,232,0.7);
+  margin-bottom: 10px;
+}
+.announcement-date {
+  font-size: 0.75rem;
+  color: var(--green);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+    .announcement-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.announcement-link {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  text-decoration: none;
+  border: 1.5px solid rgba(212,175,55,0.4);
+  padding: 5px 14px;
+  transition: all 0.2s;
+}
+.announcement-link:hover {
+  background: var(--gold);
+  color: var(--black);
+}
     
     .toggle-photos-btn {
   margin-left: 14px;
@@ -574,6 +630,7 @@
   <nav>
     <a class="nav-brand" href="#hero">MAYUR<span>AA</span></a>
     <ul class="nav-links">
+      <li><a href="#announcements">Announcements</a></li>
       <li><a href="#people">People</a></li>
       <li><a href="#workshops">Workshops</a></li>
       <li><a href="#events">Events</a></li>
@@ -599,6 +656,39 @@
     </div>
   </section>
 
+<!-- ══════════════════════════════════════════
+       ANNOUNCEMENTS
+  ══════════════════════════════════════════ -->
+  <section id="announcements" style="background: var(--offblack);">
+    <div class="reveal">
+      <p class="section-label">Latest Updates</p>
+      <h2 class="section-title">Announce<span>ments</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="reveal">
+      <div class="announcement-card">
+        <span class="announcement-tag">Auditions</span>
+        <h3 class="announcement-title">Announcement Title Here</h3>
+        <p class="announcement-body">Details about the announcement go here — dates, venue, who can participate, etc.</p>
+        <div class="announcement-links">
+          <a href="#" class="announcement-link">Registration Form</a>
+          <a href="#" class="announcement-link">More Details</a>
+        </div>
+        <p class="announcement-date">June 2025</p>
+      </div>
+      <div class="announcement-card">
+        <span class="announcement-tag">Winner</span>
+        <h3 class="announcement-title">Announcement Title Here</h3>
+        <p class="announcement-body">Details go here.</p>
+        <div class="announcement-links">
+          <a href="#" class="announcement-link">More Details</a>
+        </div>
+        <p class="announcement-date">May 2025</p>
+      </div>
+    </div>
+  </section>
+  
   <!-- ══════════════════════════════════════════
        PEOPLE
   ══════════════════════════════════════════ -->
