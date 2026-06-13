@@ -23,6 +23,28 @@
       --white:    #FFFFFF;
     }
 
+    .announcements-scroll {
+  max-height: 480px;
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--green) var(--grey);
+}
+
+.announcements-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.announcements-scroll::-webkit-scrollbar-track {
+  background: var(--grey);
+  border-radius: 4px;
+}
+
+.announcements-scroll::-webkit-scrollbar-thumb {
+  background: var(--green);
+  border-radius: 4px;
+}
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
 
@@ -483,6 +505,7 @@
   <!-- ACHIEVEMENTS -->
   <section id="achievements">
     <div class="reveal">
+      <div class="announcements-scroll">
       <p class="section-label">Pride of Mayuraa</p>
       <h2 class="section-title">Achieve<span>ments</span></h2>
       <div class="divider"></div>
@@ -509,6 +532,7 @@
         <div class="achievement-medal">🥇</div>
       </div>
     </div>
+    </div>   
   </section>
 
   <footer>
