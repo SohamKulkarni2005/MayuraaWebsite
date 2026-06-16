@@ -395,25 +395,20 @@
       letter-spacing: 0.05em;
     }
 
-    @media (max-width: 768px) {
+   @media (max-width: 768px) {
       nav { padding: 16px 20px; }
       .nav-links { gap: 16px; }
       section { padding: 64px 20px; }
-      .gallery-header { padding: 0 20px; }
-      .carousel-track { padding: 0 20px; }
-      .carousel-slide { min-width: 280px; }
-      .carousel-controls { padding: 0 20px; }
-      .media-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
-      .achievements-grid { grid-template-columns: 1fr; }
-      .year-btn { padding: 6px 12px; font-size: 0.7rem; }
+      .page-header { padding: 120px 20px 48px; }
+      .people-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
     }
 
     @media (max-width: 520px) {
       .nav-links { display: none; }
-      .carousel-slide { min-width: 240px; }
       .section-title { font-size: clamp(1.8rem, 8vw, 3rem); }
-      .media-grid { grid-template-columns: 1fr 1fr; }
-      .contact-links { flex-direction: column; align-items: center; }
+      .people-grid { grid-template-columns: repeat(3, 1fr); }
+      .tab-btn { padding: 7px 14px; font-size: 0.7rem; }
+      .subsection-title { font-size: 1.2rem; }
     }
 
     .reveal {
