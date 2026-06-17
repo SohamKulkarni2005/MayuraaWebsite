@@ -23,6 +23,34 @@
       --white:    #FFFFFF;
     }
 
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.6rem;
+      cursor: pointer;
+      padding: 4px 8px;
+      z-index: 101;
+    }
+
+    @media (max-width: 520px) {
+      .hamburger { display: block; }
+      .nav-links {
+        display: none;
+        position: fixed;
+        top: 60px;
+        left: 0; right: 0;
+        background: rgba(10,10,10,0.97);
+        flex-direction: column;
+        padding: 24px;
+        gap: 20px;
+        border-bottom: 1px solid rgba(0,168,107,0.25);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { font-size: 1rem; }
+    }
+
     .announcements-scroll {
       max-height: 480px;
       overflow-y: auto;
@@ -316,7 +344,8 @@
 
   <nav>
     <a class="nav-brand" href="index.html">MAYUR<span>AA</span></a>
-    <ul class="nav-links">
+   <button class="hamburger" onclick="toggleMenu()" id="hamburger">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="people.html">People</a></li>
       <li><a href="events.html">What We Do</a></li>
@@ -522,6 +551,16 @@
     }, { threshold: 0.08 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+      });
+    });
   </script>
 </body>
 </html>
