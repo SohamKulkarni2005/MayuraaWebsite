@@ -651,9 +651,8 @@
     let lightboxImages = [];
     let lightboxIndex = 0;
 
-    function openLightbox(imageId) {
-      // Get all images from the same section
-      const allImgs = document.querySelectorAll('.media-card img');
+   function openLightbox(imageId, subsectionEl) {
+      const allImgs = subsectionEl.querySelectorAll('.media-card img');
       lightboxImages = Array.from(allImgs).map(i => i.src.match(/id=([^&]+)/)?.[1]).filter(Boolean);
       lightboxIndex = lightboxImages.indexOf(imageId);
       if (lightboxIndex === -1) lightboxIndex = 0;
@@ -694,11 +693,12 @@
     }
 
     // Click on image to open lightbox
-    document.querySelectorAll('.media-card img').forEach(img => {
+   document.querySelectorAll('.media-card img').forEach(img => {
       img.addEventListener('click', function(e) {
         e.stopPropagation();
         const id = this.src.match(/id=([^&]+)/)?.[1];
-        if (id) openLightbox(id);
+        const subsection = this.closest('.collapsible-photos');
+        if (id && subsection) openLightbox(id, subsection);
       });
     });
 
