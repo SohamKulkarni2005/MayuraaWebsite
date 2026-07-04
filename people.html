@@ -282,7 +282,7 @@
 
     <div class="main-tabs reveal">
       <button class="tab-btn active" onclick="showPeopleTab('current', this)">Current Team</button>
-      <button class="tab-btn" onclick="showPeopleTab('past', this)">Past Coordinators</button>
+      <button class="tab-btn" onclick="showPeopleTab('past', this)">Previous Committees</button>
       <button class="tab-btn" onclick="showPeopleTab('faculty', this)">Faculty Advisors</button>
     </div>
 
@@ -338,13 +338,25 @@
           <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Member"></div>
           <div class="person-name">Member Name</div><div class="person-role">Outreach</div>
         </div>
+        <div class="person-card">
+          <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Member"></div>
+          <div class="person-name">Member Name</div><div class="person-role">Video Editor</div>
+        </div>
       </div>
     </div>
 
-    <!-- PAST COORDINATORS -->
+    <!-- PREVIOUS COMMITTEES -->
+    <!--
+      Structure for each tenure: Coordinators (visible) + Dancers (commented) + Core Committee (commented).
+      To bring back a year's Dancers/Core Committee, delete the <!- - and - -> around that block
+      and fill in real photo IDs / names / titles.
+    -->
     <div id="people-past" style="display:none" class="reveal">
+
       <div class="year-block">
         <p class="year-block-title">2025 – 26</p>
+
+        <p class="subsection-title">Coordinators</p>
         <div class="people-grid">
           <div class="person-card">
             <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Arya Kelhe"></div>
@@ -355,9 +367,30 @@
             <div class="person-name">Samiksha Patil</div>
           </div>
         </div>
+
+        <!--
+        <p class="subsection-title">Dancers</p>
+        <div class="people-grid">
+          <div class="person-card">
+            <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Dancer"></div>
+            <div class="person-name">Dancer Name</div><div class="person-role">Dancer</div>
+          </div>
+        </div>
+
+        <p class="subsection-title">Core Committee</p>
+        <div class="people-grid">
+          <div class="person-card">
+            <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Member"></div>
+            <div class="person-name">Member Name</div><div class="person-role">Social Media</div>
+          </div>
+        </div>
+        -->
       </div>
+
       <div class="year-block">
         <p class="year-block-title">2024 – 25</p>
+
+        <p class="subsection-title">Coordinators</p>
         <div class="people-grid">
           <div class="person-card">
             <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Vaishnavi Vinayak"></div>
@@ -368,9 +401,30 @@
             <div class="person-name">Samiksha Meshram</div>
           </div>
         </div>
+
+        <!--
+        <p class="subsection-title">Dancers</p>
+        <div class="people-grid">
+          <div class="person-card">
+            <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Dancer"></div>
+            <div class="person-name">Dancer Name</div><div class="person-role">Dancer</div>
+          </div>
+        </div>
+
+        <p class="subsection-title">Core Committee</p>
+        <div class="people-grid">
+          <div class="person-card">
+            <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Member"></div>
+            <div class="person-name">Member Name</div><div class="person-role">Social Media</div>
+          </div>
+        </div>
+        -->
       </div>
+
       <div class="year-block">
         <p class="year-block-title">2023 – 24</p>
+
+        <p class="subsection-title">Coordinators</p>
         <div class="people-grid">
           <div class="person-card">
             <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Mrinmayee Sakharekar"></div>
@@ -381,16 +435,56 @@
             <div class="person-name">Niharika Singh</div>
           </div>
         </div>
+
+        <!--
+        <p class="subsection-title">Dancers</p>
+        <div class="people-grid">
+          <div class="person-card">
+            <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Dancer"></div>
+            <div class="person-name">Dancer Name</div><div class="person-role">Dancer</div>
+          </div>
+        </div>
+
+        <p class="subsection-title">Core Committee</p>
+        <div class="people-grid">
+          <div class="person-card">
+            <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Member"></div>
+            <div class="person-name">Member Name</div><div class="person-role">Social Media</div>
+          </div>
+        </div>
+        -->
       </div>
+
       <div class="year-block">
         <p class="year-block-title">2022 – 23</p>
+
+        <p class="subsection-title">Coordinators</p>
         <div class="people-grid">
           <div class="person-card">
             <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Sayantan Mondal"></div>
             <div class="person-name">Sayantan Mondal</div>
           </div>
         </div>
+
+        <!--
+        <p class="subsection-title">Dancers</p>
+        <div class="people-grid">
+          <div class="person-card">
+            <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Dancer"></div>
+            <div class="person-name">Dancer Name</div><div class="person-role">Dancer</div>
+          </div>
+        </div>
+
+        <p class="subsection-title">Core Committee</p>
+        <div class="people-grid">
+          <div class="person-card">
+            <div class="person-photo"><img src="https://drive.google.com/thumbnail?id=YOUR_FILE_ID&sz=w800" alt="Member"></div>
+            <div class="person-name">Member Name</div><div class="person-role">Social Media</div>
+          </div>
+        </div>
+        -->
       </div>
+
     </div>
 
     <!-- FACULTY ADVISORS -->
