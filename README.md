@@ -128,6 +128,45 @@ Ask Claude for help with this if needed — just share the relevant HTML file.
 
 ---
 
+## Updating the Website (Netlify Build-Minute-Saving Workflow)
+
+Netlify only has limited free build minutes per month. To avoid wasting them,
+builds are kept **stopped** by default and only turned on briefly when we're
+actually ready to publish.
+
+### Everyday editing (costs 0 build minutes)
+1. Make edits directly on GitHub (or locally), commit, and push to `main` as
+   many times as needed.
+2. Since Netlify builds are stopped, none of these pushes trigger anything on
+   Netlify — no build minutes are used, no matter how many commits you make.
+3. To check how a change actually looks, open the relevant `.html` file
+   directly in a browser (double-click it, or drag it into a browser tab).
+   Since the site has no build step, this is a very close preview of the
+   live version — completely free, no Netlify involved.
+4. Repeat steps 1–3 until you're fully happy with everything.
+
+### Publishing (only when ready to go live)
+1. Go to Netlify → **Project configuration → Build & deploy → Continuous
+   deployment → Build settings → Configure**.
+2. Set **Build status** to **Active**.
+3. Go to the **Deploys** tab → **Trigger deploy → Deploy site**.
+4. Wait for the deploy to finish, then open the live site URL to confirm the
+   update actually shows up.
+5. Go back to **Build settings → Configure** and set **Build status** back to
+   **Stopped builds**.
+
+### The one rule to remember
+> Turning "Active" back on is the *publish* step, not the *review* step.
+> Always preview changes locally first. Only flip builds to Active when
+> you're ready for the real site to update — then flip it back to Stopped
+> right after.
+
+### Where to find "Build status"
+Project configuration → Build & deploy → Continuous deployment →
+Build settings panel → **Configure** button → **Build status** field.
+(There isn't a separate standalone "Stop builds" button on the main page —
+it's inside this Configure screen.)
+
 ## Notes for Future Coordinators
 - Always share the **latest version** of the HTML file when asking Claude for changes
 - Keep the `SAMAN___.TTF` and `logo.jpg` files in the repository — deleting them breaks the site
